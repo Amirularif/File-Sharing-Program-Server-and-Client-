@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author amiru
+ *
+ */
+interface ClientServerFIleShare {
+}
