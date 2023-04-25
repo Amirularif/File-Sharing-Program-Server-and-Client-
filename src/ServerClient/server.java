@@ -175,6 +175,7 @@ public class server {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
+						JOptionPane.showMessageDialog(jframe, "file downloaded successfully");
 						File filetodownload = new File(filename);
 						try {
 							FileOutputStream fileoutputstream = new FileOutputStream(filetodownload);
