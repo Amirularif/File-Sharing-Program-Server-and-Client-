@@ -3,6 +3,7 @@ package ServerClient;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -14,6 +15,8 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
@@ -28,6 +31,7 @@ import javax.swing.border.EmptyBorder;
 
 public class server {
 	static ArrayList<MyFile> myfiles = new ArrayList<>();
+	static Map<String, Integer> fileCountMap = new HashMap<>();
 	
 	public static void main (String[]args) throws IOException {
 		
@@ -62,12 +66,17 @@ public class server {
 				
 				int filenameLength = datainputstream.readInt();
 				
-				if(filenameLength>0) {
-					byte[] fileNameBytes = new byte[filenameLength];
-					datainputstream.readFully(fileNameBytes, 0, fileNameBytes.length);
-					String filename = new String(fileNameBytes);
-					
-					int filecontentlength = datainputstream.readInt();
+				if (filenameLength > 0) {
+                    byte[] fileNameBytes = new byte[filenameLength];
+                    datainputstream.readFully(fileNameBytes, 0, fileNameBytes.length);
+                    String filename = new String(fileNameBytes);
+
+                    if (fileAlreadyExists(filename)) {
+                        JOptionPane.showMessageDialog(jframe, "The file " + filename + " already exists on the server.");
+                        continue; 
+                    }
+
+                    int filecontentlength = datainputstream.readInt();
 					
 					if(filecontentlength>0) {
 						byte[] filecontentbytes = new byte[filecontentlength];
@@ -98,6 +107,7 @@ public class server {
 							jframe.validate();
 						}
 						myfiles.add(new MyFile(fileid,filename,filecontentbytes,getFileExtension(filename)));
+						updateFileCount(filename);
 						fileid++;
 					}
 							
@@ -106,6 +116,15 @@ public class server {
 				error.printStackTrace();
 			}
 		}
+	}
+
+	private static void updateFileCount(String filename) {
+		 int count = fileCountMap.getOrDefault(filename, 0);
+	     fileCountMap.put(filename, count + 1);	
+	}
+
+	private static boolean fileAlreadyExists(String filename) {
+		return fileCountMap.containsKey(filename) && fileCountMap.get(filename) > 0;
 	}
 
 	private static MouseListener getMyMouseListener() {
@@ -128,7 +147,7 @@ public class server {
 			private JFrame createFrame(final String filename,final byte[] filedata,String fileextension) {
 				
 				final JFrame jframe = new JFrame("File Downloader");
-				jframe.setSize(450,450);
+				jframe.setSize(500,550);
 				
 				final JPanel jpanel = new JPanel();
 				jpanel.setLayout(new BoxLayout(jpanel,BoxLayout.Y_AXIS));
@@ -168,7 +187,9 @@ public class server {
 				if (fileextension.equalsIgnoreCase("txt")) {
 					jfilecontent.setText("<html>"+ new String(filedata)+"<html>");
 				}else {
-					jfilecontent.setIcon(new ImageIcon(filedata));
+					ImageIcon imageIcon = new ImageIcon(filedata);
+				    Image image = imageIcon.getImage().getScaledInstance(250, 300, Image.SCALE_AREA_AVERAGING);
+				    jfilecontent.setIcon(new ImageIcon(image));
 				}
 				
 				jyesbutton.addActionListener(new ActionListener() {
