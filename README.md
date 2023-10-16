@@ -30,4 +30,15 @@ can transfer, modify, delete files to and from the server. On server side, the f
    > This class is used by the server to manage and handle client connections and display information about them.
 
 1. _MyFile.java_           :
-   >This class is used by both the client and server to read and write files. 
+   >This class is used by both the client and server to read and write files.
+
+# Compiling the program
+ 1. Download the whole project into Eclipse
+ 1. Run the classes according to this steps :
+    - Serverconnector.java -> ClientFrame.java -> server.java -> client.java
+ 1. Run Serverconnector.java multiple times if in need of multiple clients
+
+# Screenshots
+_will update soon_
+
+
