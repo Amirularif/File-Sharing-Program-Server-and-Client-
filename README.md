@@ -40,5 +40,6 @@ can transfer, modify, delete files to and from the server. On server side, the f
 
 # Screenshots
 _will update soon_
+![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/5ba52a72-69f7-4cda-bb7e-eebd395cb187)
 
 
