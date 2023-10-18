@@ -50,10 +50,9 @@ _will update soon_
 <img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/d83a5105-229e-44ee-bcc3-f26241099be0" width="550" height="250">
 
 ### Server side file managing
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/0936d21e-6681-43c6-aed1-91d32354e434)
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/787aa568-240d-4b2c-929f-94588d2e5a71)
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/86f00e49-fc1b-442c-833d-5e239c8517fd)
-
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/0936d21e-6681-43c6-aed1-91d32354e434" width="450" height="250">
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/787aa568-240d-4b2c-929f-94588d2e5a71" width="450" height="250">
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/86f00e49-fc1b-442c-833d-5e239c8517fd" width="450" height="250">
 
 ### Overall design
 ![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/487e44fd-0487-4801-bfda-c09f7076a24c)
