@@ -45,10 +45,9 @@ _will update soon_
 <img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/37f756cc-57af-4db2-ba18-8e055e9a4397" width="400" height="180">
 
 ### Sending files to server
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/c855a623-f0a7-4f93-a6ad-84b0d1fb02ed)
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/e1692602-851c-4cf1-a1ca-d21ef2294802)
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/d83a5105-229e-44ee-bcc3-f26241099be0)
-
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/c855a623-f0a7-4f93-a6ad-84b0d1fb02ed" width="400" height="250">
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/e1692602-851c-4cf1-a1ca-d21ef2294802" width="400" height="250">
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/d83a5105-229e-44ee-bcc3-f26241099be0" width="400" height="250">
 
 
 ### Server side file managing
