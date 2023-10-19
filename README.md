@@ -39,7 +39,7 @@ can transfer, modify, delete files to and from the server. On server side, the f
  1. Run Serverconnector.java multiple times if in need of multiple clients
 
 # Screenshots
-_will update soon_
+_updating_
 ### Connecting to server
 <img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/88e4da4a-5ff3-4bf5-b60a-00cee667008c" width="400" height="250">
 <img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/37f756cc-57af-4db2-ba18-8e055e9a4397" width="400" height="180">
