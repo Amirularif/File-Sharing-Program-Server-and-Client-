@@ -55,7 +55,7 @@ _updating_
 <img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/86f00e49-fc1b-442c-833d-5e239c8517fd" width="450" height="250">
 
 ### Overall design
-![image](https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/487e44fd-0487-4801-bfda-c09f7076a24c)
+<img src="https://github.com/Amirularif/Server-Client-File-Sharing-Program/assets/57553676/487e44fd-0487-4801-bfda-c09f7076a24c" width="600" height="350">
 
 
 
